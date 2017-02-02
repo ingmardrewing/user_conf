@@ -96,6 +96,6 @@ alias vim="nvim"
 
 ssh-add -KA &> /dev/null
 
-source /Users/drewing/.sensible.zsh
-source /Users/drewing/.t-completions.zsh
+source ~/.sensible.zsh
+source ~/.t-completions.zsh
 
