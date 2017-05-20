@@ -45,6 +45,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'ervandew/supertab'
 Plug 'benmills/vimux'
 Plug 'adoy/vim-php-refactoring-toolbox'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'quramy/tsuquyomi'
 
 let g:make = 'gmake'
 if exists('make')
@@ -655,3 +658,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
  " Zoom the runner pane (use <bind-key> z to restore runner pane)
  map <Leader>vz :call VimuxZoomRunner()<CR>
+
+autocmd BufWritePost *.go :VimuxRunCommand 'go test ./...'
+autocmd BufWritePost *.js :VimuxRunCommand 'gulp'
+au FileType go nmap <leader>r :VimuxRunCommand 'go run main.go'<CR>
