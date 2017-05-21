@@ -1,0 +1,8 @@
+export EDITOR="/usr/local/bin/nvim"
+export VISUAL="/usr/local/bin/nvim"
+export GOPATH=$HOME/Go
+export GOBIN=$GOPATH/bin
+export HOMESTEAD_PATH=~/.composer/vendor/bin
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/opt/ImageMagick/bin:/usr/games:$HOMESTEAD_PATH:$GOPATH/bin:/usr/local/go/bin
+export CDPATH=.:$GOPATH/src/github.com/ingmardrewing:$HOME/Sites/fcp_wordpress/wp-content
+

@@ -1,0 +1,27 @@
+alias prometheus="ssh drewing@prometheus.local"
+alias drewing.de="ssh www.drewing.de@ssh.strato.de"
+alias fazit="ssh www.fazit-design.com@ssh.strato.de"
+
+alias strato="ssh www.drewing.de@ssh.strato.de"
+alias status="git status"
+alias push="git push"
+alias pull="git pull"
+alias vserv="ssh root@h2690338.stratoserver.net"
+
+alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
+alias json_pretty='python -m json.tool'
+alias log="git log"
+alias g="googler"
+
+alias tt="t timeline"
+alias delete_local_branch="git branch -d"
+alias delete_remote_branch="git push origin --delete"
+
+alias vim="nvim"
+alias ta="tmux attach -t"
+alias nge2e="npm run e2e"
+alias db="mysql -u root --password=]k2ms%L7Mmsw"
+alias resource="source ~/.zshrc"
+alias editenv="vim ~/.zsh_env"
+alias vserver="ssh root@h2690338.stratoserver.net"
