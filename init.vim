@@ -48,6 +48,7 @@ Plug 'adoy/vim-php-refactoring-toolbox'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'quramy/tsuquyomi'
+Plug 'chaoren/vim-wordmotion'
 
 let g:make = 'gmake'
 if exists('make')
