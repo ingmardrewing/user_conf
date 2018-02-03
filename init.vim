@@ -49,6 +49,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'quramy/tsuquyomi'
 Plug 'chaoren/vim-wordmotion'
+Plug 'jdonaldson/vaxe'
 
 let g:make = 'gmake'
 if exists('make')
@@ -660,6 +661,6 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
  " Zoom the runner pane (use <bind-key> z to restore runner pane)
  map <Leader>vz :call VimuxZoomRunner()<CR>
 
-autocmd BufWritePost *.go :VimuxRunCommand 'go test ./...'
-autocmd BufWritePost *.js :VimuxRunCommand 'gulp'
+autocmd BufWritePost *.go :VimuxRunCommand 'go test -v ./... | grep -A1 "FAIL"'
+"autocmd BufWritePost *.js :VimuxRunCommand 'gulp'
 au FileType go nmap <leader>r :VimuxRunCommand 'go run main.go'<CR>
