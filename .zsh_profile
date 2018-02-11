@@ -6,3 +6,7 @@ export HOMESTEAD_PATH=~/.composer/vendor/bin
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/opt/ImageMagick/bin:/usr/games:$HOMESTEAD_PATH:$GOPATH/bin:/usr/local/go/bin
 export CDPATH=.:$GOPATH/src/github.com/ingmardrewing:$HOME/Sites/fcp_wordpress/wp-content
 
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
